@@ -1,19 +1,18 @@
 import { Image, StyleSheet, Dimensions } from "react-native"
 
 import TextStyled from "../../../components/TextStyled"
-import top from "../../../../assets/bicicles/top.png"
 
 const width = Dimensions.get("screen").width;
 
-export default function Top(){
+export default function Top({ photo, title }){
     return <>
-        <Image source={top} style={styles.top} />
-        <TextStyled style={styles.title}>Detalhes da Bicicleta</TextStyled>
+        <Image source={photo} style={styles.photo} />
+        <TextStyled style={styles.title}>{title}</TextStyled>
     </>
 }
 
 const styles = StyleSheet.create({
-    top: {
+    photo: {
         width: "100%",
         height: 578 / 768 * width - 10,
         borderBottomLeftRadius: 8,

@@ -1,16 +1,13 @@
-import { View, StyleSheet } from "react-native-web"
+import { StyleSheet } from "react-native-web"
 import TextStyled from "../../../components/TextStyled"
 import Owner from "./Owner"
 
-export default function Infos(){
+export default function Infos({ name, owner, description, price }){
     return <>
-        <TextStyled style={styles.name}>Biciclata Allied</TextStyled>
-        <Owner />
-        <TextStyled style={styles.description}>
-            Uma bicicleta esportiva com alta 
-            performance par a atletas profissionais.
-        </TextStyled>
-        <TextStyled style={styles.price}>R$5.000,00</TextStyled>
+        <TextStyled style={styles.name}>{name}</TextStyled>
+        <Owner {...owner}/>
+        <TextStyled style={styles.description}>{description}</TextStyled>
+        <TextStyled style={styles.price}>{price}</TextStyled>
     </>
 }
 
@@ -34,3 +31,4 @@ const styles = StyleSheet.create({
         marginTop: 6
    }
 })
+

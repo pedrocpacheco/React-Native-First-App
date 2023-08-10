@@ -1,15 +1,15 @@
 import React from "react";
-import { StyleSheet, Image, Dimensions, View } from "react-native"; 
+import { View, StyleSheet } from "react-native"; 
+
 import Top from "./components/Top";
 import Infos from "./components/Infos";
 
-export default function Bicileta(){
+export default function Bicycle({ top, infos }){
     return <>
-    
-    <Top />
-    <View style={styles.infos}>
-        <Infos />
-    </View>
+        <Top {...top}/>
+        <View style={styles.infos}>
+            <Infos {...infos}/>
+        </View>
     </>
 }
 

@@ -1,13 +1,11 @@
 import { View, Image, StyleSheet } from "react-native"
 import TextStyled from "../../../components/TextStyled"
 
-import owner_image from "../../../../assets/owner.png"
-
-export default function Owner(){
+export default function Owner({ owner_image, owner_name }){
     return <>
         <View style={styles.owner}>
             <Image source={owner_image} style={styles.owner_image}></Image>
-            <TextStyled style={styles.owner_name}>Pedro Carvalho Pacheco</TextStyled>
+            <TextStyled style={styles.owner_name}>{owner_name}</TextStyled>
         </View>
     </>
 }
