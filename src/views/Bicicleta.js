@@ -1,5 +1,6 @@
 import React from "react";
 import { StyleSheet, Image, Dimensions, Text, View } from "react-native"; 
+import TextStyled from "./components/TextStyled";
 
 import top from "../../assets/bicicles/top.png"
 import owner_image from "../../assets/owner.png"
@@ -9,18 +10,18 @@ const width = Dimensions.get("screen").width;
 export default function Bicileta(){
     return <>
         <Image source={top} style={styles.top} />
-        <Text style={styles.title}>Detalhes da Bicicleta</Text>
+        <TextStyled style={styles.title}>Detalhes da Bicicleta</TextStyled>
         <View style={styles.infos}>
-            <Text style={styles.name}>Bicicleta Allied</Text>
+            <TextStyled style={styles.name}>Bicicleta Allied</TextStyled>
             <View style={styles.owner}>
                 <Image source={owner_image} style={styles.owner_image}></Image>
-                <Text style={styles.owner_name}>Pedro Carvalho Pacheco</Text>
+                <TextStyled style={styles.owner_name}>Pedro Carvalho Pacheco</TextStyled>
             </View>
-            <Text style={styles.description}>
+            <TextStyled style={styles.description}>
                 Uma bicicleta esportiva com alta 
                 performance par a atletas profissionais.
-            </Text>
-            <Text style={styles.price}>R$5.000,00</Text>
+            </TextStyled>
+            <TextStyled style={styles.price}>R$5.000,00</TextStyled>
         </View>
     </>
 }
@@ -29,6 +30,8 @@ const styles = StyleSheet.create({
     top: {
         width: "100%",
         height: 578 / 768 * width - 10,
+        borderBottomLeftRadius: 8,
+        borderBottomRightRadius: 8
     },
     title:{
         width: "100%",
