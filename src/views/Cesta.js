@@ -1,5 +1,5 @@
-import React from "react"; // ? Usa export defult
-import { Text } from "react-native"; // ? Não usa export default
+import React from "react";
+import { Text } from "react-native"; 
 
 export default function Cesta(){
     return <Text>Cesta</Text>
