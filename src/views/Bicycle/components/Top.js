@@ -1,6 +1,6 @@
 import { Image, StyleSheet, Dimensions } from "react-native"
-import TextStyled from "../../../components/TextStyled"
 
+import TextStyled from "../../../components/TextStyled"
 import top from "../../../../assets/bicicles/top.png"
 
 const width = Dimensions.get("screen").width;
