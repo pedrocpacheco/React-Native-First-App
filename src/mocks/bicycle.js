@@ -7,7 +7,7 @@ const bicycle = {
         title: "Detalhes da Bicicleta"
     },
     infos:{
-        name: "Biciclata Allied",
+        name: "Biciclata Allied V3",
         owner: {
             owner_image: owner_image,
             owner_name: "Pedro Carvalho Pacheco",
