@@ -20,7 +20,7 @@ const bicycle = {
         },
         description: "Uma bicicleta esportiva com alta performance para atletas profissionais",
         price: "R$5.000,00",
-        button: "Comprar"
+        button: "Garantir Seguro"
     },
     mods: {
         title: "Modificações da Bicicleta",

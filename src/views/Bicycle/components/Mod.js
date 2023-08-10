@@ -13,9 +13,10 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         borderBottomWidth: 1,
         borderBottomColor: "#ececec",
+        marginHorizontal: 16,
         paddingVertical: 16,
         alignItems: "center",
-        gap: 70
+        gap: 70,
     },
     image: {
         width: 80 ,

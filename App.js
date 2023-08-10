@@ -14,11 +14,11 @@ export default function App() {
    })
 
    if(!fontLoaded){
-    return <AppLoading />
+    return <View />
    }
 
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{flex: 1}}>
       <StatusBar />
       <Bicycle {...mock}/>
     </SafeAreaView>
