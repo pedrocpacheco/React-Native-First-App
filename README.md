@@ -9,7 +9,7 @@
 
 Primeiramente, organizamos esses pacotes
 
-![Untitled](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ffc892239-d731-4026-a61c-b626bd3808ce%2FUntitled.png?table=block&id=3ed76b1b-3b0f-4d80-a388-e3cbee60aa8b&spaceId=5ee64f4b-deb4-4900-a71c-46a89624623f&width=2000&userId=d0c44c91-4af5-4916-8514-c406a46262d2&cache=v2)
+![Untitled](https://imgur.com/hWcP3jS)
 
 ### Criando o Arquivo
 
