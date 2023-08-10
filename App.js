@@ -1,5 +1,5 @@
 import { StatusBar, SafeAreaView, View } from 'react-native';
-import Bicicleta from './src/views/Bicycle';
+import Bicycle from './src/views/Bicycle/Bicycle';
 import { useFonts, 
   Montserrat_400Regular, 
   Montserrat_700Bold } from '@expo-google-fonts/montserrat';
@@ -17,7 +17,7 @@ export default function App() {
   return (
     <SafeAreaView>
       <StatusBar />
-      <Bicicleta />
+      <Bicycle/>
     </SafeAreaView>
   );
 }

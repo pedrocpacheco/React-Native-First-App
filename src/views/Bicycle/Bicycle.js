@@ -1,16 +1,13 @@
 import React from "react";
-import { StyleSheet, Image, Dimensions, Text, View } from "react-native"; 
+import { StyleSheet, Image, Dimensions, View } from "react-native"; 
 import TextStyled from "../../components/TextStyled"
+import Top from "./components/Top";
 
-import top from "../../../assets/bicicles/top.png"
 import owner_image from "../../../assets/owner.png"
-
-const width = Dimensions.get("screen").width;
 
 export default function Bicileta(){
     return <>
-        <Image source={top} style={styles.top} />
-        <TextStyled style={styles.title}>Detalhes da Bicicleta</TextStyled>
+        <Top />
         <View style={styles.infos}>
             <TextStyled style={styles.name}>Biciclata Allied</TextStyled>
             <View style={styles.owner}>
@@ -27,25 +24,6 @@ export default function Bicileta(){
 }
 
 const styles = StyleSheet.create({
-    top: {
-        width: "100%",
-        height: 578 / 768 * width - 10,
-        borderBottomLeftRadius: 8,
-        borderBottomRightRadius: 8
-    },
-    title:{
-        width: "100%",
-        position: "absolute",
-        textAlign: "center",    
-        fontSize: 16,
-        lineHeight: 26,
-        color: "white",
-        fontWeight: "bold",
-        padding: 10,
-        textShadowColor: "black",
-        textShadowOffset: {width: 2, height: 2},
-        textShadowRadius: 6
-    },
     infos: {
         paddingVertical: 10,
         paddingHorizontal: 16
