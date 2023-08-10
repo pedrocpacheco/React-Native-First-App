@@ -9,7 +9,7 @@
 
 Primeiramente, organizamos esses pacotes
 
-![Untitled](React%20Native%20criando%20um%20app%20a00d6537c72c4e51ba93ff1ca537dd1f/Untitled.png)
+![Untitled](https://file.notion.so/f/s/fc892239-d731-4026-a61c-b626bd3808ce/Untitled.png?id=3ed76b1b-3b0f-4d80-a388-e3cbee60aa8b&table=block&spaceId=5ee64f4b-deb4-4900-a71c-46a89624623f&expirationTimestamp=1691798400000&signature=ltyWylZOXTE9U9Q13eZtbmIX_nyV3ll5jRuKfmH183M&downloadName=Untitled.png)
 
 ### Criando o Arquivo
 
