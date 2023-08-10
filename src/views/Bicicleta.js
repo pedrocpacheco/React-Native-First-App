@@ -12,8 +12,8 @@ export default function Bicileta(){
         <Text style={styles.title}>Detalhes da Bicicleta</Text>
         <View style={styles.infos}>
             <Text style={styles.name}>Bicicleta Allied</Text>
-            <View>
-                <Image source={owner_image}></Image>
+            <View style={styles.owner}>
+                <Image source={owner_image} style={styles.owner_image}></Image>
                 <Text style={styles.owner_name}>Pedro Carvalho Pacheco</Text>
             </View>
             <Text style={styles.description}>
@@ -52,6 +52,16 @@ const styles = StyleSheet.create({
         fontSize: 26, 
         lineHeight: 42,
         fontWeight: "bold"
+    },
+    owner:{
+        flexDirection: "row",
+        paddingVertical: 10,
+        alignItems: "center"
+    },
+    owner_image:{
+        width: 45,
+        height: 45,
+        borderRadius: 15
     },
     owner_name:{
         fontSize: 18,
