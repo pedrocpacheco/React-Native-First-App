@@ -13,7 +13,8 @@ const bicycle = {
             owner_name: "Pedro Carvalho Pacheco",
         },
         description: "Uma bicicleta esportiva com alta performance para atletas profissionais",
-        price: "R$5.000,00"
+        price: "R$5.000,00",
+        button: "Comprar"
     }
 }
 

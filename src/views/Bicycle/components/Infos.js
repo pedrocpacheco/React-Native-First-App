@@ -1,13 +1,14 @@
-import { StyleSheet } from "react-native-web"
+import { StyleSheet, Button } from "react-native"
 import TextStyled from "../../../components/TextStyled"
 import Owner from "./Owner"
 
-export default function Infos({ name, owner, description, price }){
+export default function Infos({ name, owner, description, price, button}){
     return <>
         <TextStyled style={styles.name}>{name}</TextStyled>
         <Owner {...owner}/>
         <TextStyled style={styles.description}>{description}</TextStyled>
         <TextStyled style={styles.price}>{price}</TextStyled>
+        <Button title={button}/>
     </>
 }
 
