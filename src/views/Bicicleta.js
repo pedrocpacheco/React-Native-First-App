@@ -18,7 +18,7 @@ export default function Bicileta(){
             </View>
             <Text style={styles.description}>
                 Uma bicicleta esportiva com alta 
-                performance para atletas profissionais.
+                performance par a atletas profissionais.
             </Text>
             <Text style={styles.price}>R$5.000,00</Text>
         </View>
