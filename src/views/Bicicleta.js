@@ -10,13 +10,13 @@ export default function Bicileta(){
         <Image source={top} style={styles.top} />
         <Text style={styles.title}>Detalhes da Bicicleta</Text>
         <View>
-            <Text>Bicicleta Allied</Text>
-            <Text>Pedro Carvalho Pacheco</Text>
-            <Text>
+            <Text style={styles.name}>Bicicleta Allied</Text>
+            <Text style={styles.owner_name}>Pedro Carvalho Pacheco</Text>
+            <Text style={styles.description}>
                 Uma bicicleta esportiva com alta 
                 performance para atletas profissionais
             </Text>
-            <Text>R$5.000,00</Text>
+            <Text style={styles.price}>R$5.000,00</Text>
         </View>
     </>
 }
@@ -38,5 +38,31 @@ const styles = StyleSheet.create({
         textShadowColor: "black",
         textShadowOffset: {width: 2, height: 2},
         textShadowRadius: 6
-    }
+    },
+    infos: {
+        paddingVertical: 8,
+        paddingHorizontal: 16
+    },
+    name: {
+        color: "#464646",
+        fontSize: 26, 
+        lineHeight: 42,
+        fontWeight: "bold"
+    },
+   owner_name:{
+    fontSize: 16,
+    lineHeight: 26
+   },
+   description: {
+    color: "#A3A3A3",
+    fontSize: 16,
+    lineHeight: 26
+   },
+   price: {
+    color: "#2A9F85",
+    fontWeight: "bold",
+    fontSize: 26,
+    lineHeight: 42,
+    marginTop: 6
+   }
 });
