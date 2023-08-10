@@ -1,9 +1,9 @@
 import React from "react";
 import { StyleSheet, Image, Dimensions, Text, View } from "react-native"; 
-import TextStyled from "../components/TextStyled";
+import TextStyled from "../../components/TextStyled"
 
-import top from "../../assets/bicicles/top.png"
-import owner_image from "../../assets/owner.png"
+import top from "../../../assets/bicicles/top.png"
+import owner_image from "../../../assets/owner.png"
 
 const width = Dimensions.get("screen").width;
 
