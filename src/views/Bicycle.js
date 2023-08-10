@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, Image, Dimensions, Text, View } from "react-native"; 
-import TextStyled from "./components/TextStyled";
+import TextStyled from "../components/TextStyled";
 
 import top from "../../assets/bicicles/top.png"
 import owner_image from "../../assets/owner.png"
@@ -12,7 +12,7 @@ export default function Bicileta(){
         <Image source={top} style={styles.top} />
         <TextStyled style={styles.title}>Detalhes da Bicicleta</TextStyled>
         <View style={styles.infos}>
-            <TextStyled style={styles.name}>Bicicleta Allied</TextStyled>
+            <TextStyled style={styles.name}>Biciclata Allied</TextStyled>
             <View style={styles.owner}>
                 <Image source={owner_image} style={styles.owner_image}></Image>
                 <TextStyled style={styles.owner_name}>Pedro Carvalho Pacheco</TextStyled>
