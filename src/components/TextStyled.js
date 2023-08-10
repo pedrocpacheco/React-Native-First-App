@@ -2,13 +2,16 @@
 import { Text, StyleSheet } from "react-native"
 
 export default function TextStyled({ children, style }){
-    let styleType = styles.text;
+    let fontStyle = fontStyles.text;
     
-    if (style?.fontWeight === "bold") { styleType = styles.textBold; }
-    return <Text style={[style,styleType]}>{ children }</Text>
+    if (style?.fontWeight === "bold") { 
+        fontStyle = fontStyles.textBold; 
+    }
+    
+    return <Text style={[style,fontStyle]}>{ children }</Text>
 }
 
-const styles = StyleSheet.create({
+const fontStyles = StyleSheet.create({
     text: {
         fontWeight: "normal",
         fontFamily: "MontserratRegular"
@@ -18,3 +21,4 @@ const styles = StyleSheet.create({
         fontFamily: "MontserratBold"
     }
 });
+
