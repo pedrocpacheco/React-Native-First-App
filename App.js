@@ -1,11 +1,11 @@
 import { StatusBar, SafeAreaView} from 'react-native';
-import Cesta from './src/views/Cesta';
+import Bicicleta from './src/views/Bicicleta';
 
 export default function App() {
   return (
     <SafeAreaView>
       <StatusBar />
-      <Cesta />
+      <Bicicleta />
     </SafeAreaView>
   );
 }
