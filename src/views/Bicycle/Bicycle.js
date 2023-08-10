@@ -1,18 +1,22 @@
 import React from "react";
-import { ScrollView, View, StyleSheet } from "react-native"; 
-import Mods from "./components/Mods"
+import { ScrollView, View, StyleSheet, FlatList } from "react-native"; 
+import Mod from "./components/Mod"
 
 import Top from "./components/Top";
 import Infos from "./components/Infos";
 
 export default function Bicycle({ top, infos, mods }){
-    return <ScrollView>
+    return <>
+        <FlatList
+        data={mods.list}
+        renderItem={Mod}
+        keyExtractor={({ name }) => name}
+        />
         <Top {...top}/>
         <View style={styles.infos}>
             <Infos {...infos}/>
-            <Mods {...mods}/>
         </View>
-    </ScrollView>
+    </>
 }
 
 const styles = StyleSheet.create({
@@ -20,4 +24,12 @@ const styles = StyleSheet.create({
         paddingVertical: 10,
         paddingHorizontal: 16
     },
+    listTitle: {
+        color: "#464646",
+        fontWeight: "bold",
+        fontSize: 20,
+        lineHeight: 32,
+        marginTop: 32,
+        marginBottom: 8
+    }
 })
